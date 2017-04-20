@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>俄罗斯方块</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class='start-container'>
+    <p><button id="btn-start">开始游戏</button></p>
+  </div>
+	<div class="game-container">
+		<div class='timer-panel'>
+      <div class="panel-header">
+        游戏时间
+      </div>
+      <div class="panel-body">
+        <canvas id='timer'></canvas>
+      </div>
+		</div>
+		<div class="help-panel">
+      <div class="panel-body">
+        <p>↑ 翻转方块</p>
+        <p>↓ 加速下落</p>
+        <p>← 向左移动</p>
+        <p>→ 向右移动</p>
+      </div>
+		</div>
+		<div class="level-panel">
+      <div class="panel-header">
+        当前级别
+      </div>
+      <div class="panel-body">
+        <canvas id='level'></canvas>
+      </div>
+		</div>
+	  <div class="game-main-panel">
+      <canvas id='c_game_main'></canvas>
+	  </div>
+	  <div class="next-panel">
+      <div class="panel-header">
+        下一方块
+      </div>
+      <div class="panel-body">
+        <canvas id='nextshape'></canvas>
+      </div>
+	  </div>
+	  <div class="setting-panel">
+      <div class="panel-body">
+        <button id='btn-game-pause'>暂停</button>
+      </div>
+	  </div>
+	  <div class="score-panel">
+      <div class="panel-header">
+        当前得分
+      </div>
+      <div class="panel-body">
+        <canvas id='score'></canvas>
+      </div>
+	  </div>
+	  <div class="high-score-panel">
+      <div class="panel-header">
+        最高得分
+      </div>
+      <div class="panel-body">
+        <canvas id='highscore'></canvas>
+      </div>
+	  </div>
+	</div>
+
+<script type="text/javascript" src='script/config.js'></script>
+<script type="text/javascript" src='script/app.js'></script>
+<script type="text/javascript" src='script/canvas.js'></script>
+<script type="text/javascript" src='script/keyboard.js'></script>
+<script type="text/javascript" src='script/score.js'></script>
+<script type="text/javascript" src='script/Timer.js'></script>
+<script type="text/javascript" src='script/block.js'></script>
+<script type="text/javascript" src='script/shape.js'></script>
+<script type="text/javascript" src='script/board.js'></script>
+<script type="text/javascript" src='script/tetris.js'></script>
+<script type="text/javascript" src='script/level.js'></script>
+<script type="text/javascript" src='script/resource_manager.js'></script>
+<script type="text/javascript" src='script/next_shape.js'></script><script type="text/javascript" src='script/high_score.js'></script>
+</body>
+</html>
